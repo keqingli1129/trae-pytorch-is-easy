@@ -13,3 +13,10 @@ zeros = torch.zeros(shape)
 print(zeros)
 random = torch.randn(shape)
 print(random)
+
+template = torch.randint_like(random, low=0, high=10, dtype=torch.int32)  # 0-9
+print(template)
+
+print(f"Shape of my_tensor: {my_tensor.shape}")
+print(f"Data type of my_tensor: {my_tensor.dtype}")
+print(f"Device of my_tensor: {my_tensor.device}")
