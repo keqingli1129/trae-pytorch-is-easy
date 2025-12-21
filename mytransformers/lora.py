@@ -57,7 +57,7 @@ def test_lora():
 
 if __name__ == "__main__":
     print(test_lora())
-    input_szie = 128
+    input_size = 128
     output_size = 64
     batch_size = 32
 
