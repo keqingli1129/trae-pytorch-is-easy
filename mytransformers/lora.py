@@ -61,9 +61,9 @@ if __name__ == "__main__":
     output_size = 64
     batch_size = 32
 
-    x = torch.randn(batch_size, input_szie)
+    x = torch.randn(batch_size, input_size)
 
-    lora_model = LinearWithLoRA(input_szie, output_size, rank=8, alpha=16)
+    lora_model = LinearWithLoRA(input_size, output_size, rank=8, alpha=16)
     y = lora_model(x)
     assert y.shape == (batch_size, output_size)
 
